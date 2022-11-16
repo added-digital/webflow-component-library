@@ -35,11 +35,13 @@ Steps
    
    and then add this file to the github repository. The host link will look lke this:
 
-    <script src="https://cdn.jsdelivr.net/gh/added-digital/webflow-component-library/component.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/added-digital/webflow-component-library/components/component.js"></script>
    
    and its important to look at how many components already are on that page(wfO1, etc...) 
    when you chose the wfO name(and the id 01, 02, ... in step 4).
-
+   
+   For example, navbars.js will inlcude many nav components who are defined with diffrent names and then also an object which 
+   includes 01, 02 keys with the wfO1 connected to them.
 
 
 4. Now you can add a copy button and add an id that is incremented for each component on the page.(Written as 01, 02, ...) 
@@ -49,15 +51,11 @@ Steps
 
 5. Finaly you add this code: 
 
-    <script src="https://cdn.jsdelivr.net/gh/added-digital/webflow-component-library/Nav2.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/added-digital/webflow-component-library/NavTest.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/added-digital/webflow-component-library/components/navbars.js"></script>
+   
 
     <script>
-    const wfObject = {
-        "01" : wfO1,	
-        "02" : wfO2
-        //...
-    }
+   
     document.querySelectorAll('.object-clone-btn').forEach(item => {
         item.addEventListener('click', event => {
           event.preventDefault();
@@ -77,7 +75,7 @@ Steps
 
     in the "before </body>" code tag in the webflow page. 
     
-    --> For each script with a component, add a key:value pair to the wfObject and a button with corresponding id to the page.
+    --> For each component in the script, you will have to have one cms item with a corresponding id to the copy button of the item.
         (+display of component without connection)
 
 
@@ -89,7 +87,7 @@ Steps
 Extra:   
    If uppdates are made to a component, go to a link that looks like this: 
    
-   https://purge.jsdelivr.net/gh/added-digital/webflow-component-library/component.js
+   https://purge.jsdelivr.net/gh/added-digital/webflow-component-library/components/component.js
    
    to clear the cache. 
    
