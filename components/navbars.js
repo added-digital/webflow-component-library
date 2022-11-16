@@ -9,18 +9,3 @@ const navbarObject = {
 }
 
 
-document.querySelectorAll('.object-clone-btn').forEach(item => {
-    item.addEventListener('click', event => {
-      event.preventDefault();
-      document.addEventListener('copy', event => {
-          let data = JSON.stringify(navbarObject[item.id]);
-        if (event.clipboardData) {
-          event.clipboardData.setData('application/json', data);
-        } else if (window.clipboardData) {
-          window.clipboardData.setData('application/json', data);
-        }
-        event.preventDefault();
-      }, true);
-      document.execCommand('copy');
-    })
-  })
