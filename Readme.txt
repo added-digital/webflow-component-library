@@ -37,11 +37,13 @@ Steps
 
     <script src="https://cdn.jsdelivr.net/gh/added-digital/webflow-component-library/component.js"></script>
    
-   and its important to look at how many components already are on that page(wfO1, etc...) when you chose the wfO name(and the id 01, 02, ... in step 4).
+   and its important to look at how many components already are on that page(wfO1, etc...) 
+   when you chose the wfO name(and the id 01, 02, ... in step 4).
 
 
 
-4. Now you can add a copy button and add an id that is incremented for each component on the page.(Written as 01, 02, ...) Every button should also get the    class: "object-clone-btn".
+4. Now you can add a copy button and add an id that is incremented for each component on the page.(Written as 01, 02, ...) 
+   Every button should also get the    class: "object-clone-btn".
 
 
 
@@ -75,7 +77,8 @@ Steps
 
     in the "before </body>" code tag in the webflow page. 
     
-    --> For each script with a component, add a key:value pair to the wfObject and a button with corresponding id to the page.(+display of component           without connection)
+    --> For each script with a component, add a key:value pair to the wfObject and a button with corresponding id to the page.
+        (+display of component without connection)
 
 
 
