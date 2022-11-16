@@ -44,7 +44,7 @@ Steps
    includes 01, 02 keys with the wfO1 connected to them.
 
 
-4. Now you can add a copy button and add an id that is incremented for each component on the page.(Written as 01, 02, ...) 
+4. Now you can add a copy button and add an id that is incremented categoryname for each component on the page.(Written as navbars-1, navbars-2, ...) 
    Every button should also get the    class: "object-clone-btn".
 
 
